@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <script>
+
+        function getAwords(words) {
+            var return_words = [];
+            for (var i = 0; i < words.length; i++) {
+                if (words[i].startsWith('a') || words[i].startsWith('A'))
+                    return_words.push(words[i]);
+            }
+            return return_words;
+        }
+
+        function getWordsBeginWith(words,begin_char) {
+            var return_words = [];
+            var small_char = begin_char.toLowerCase();
+            var big_char = begin_char.toUpperCase();
+            for (var i = 0; i < words.length; i++) {
+                if ( words[i].startsWith(small_char)||words[i].startsWith(big_char))
+                    return_words.push(words[i]);
+            }
+            return return_words;
+        }
+
+        var test = ['apple', 'Apple', 'banana', 'Blueberry', 'peach', 'Melon'];
+        //var begin_char = ['banan', 'bili' , 'asfdd', 'ddfgg', 'dfggssggg','ffgggsss','EDKDK','BKkddke'];
+        var ret = getAwords(test);
+        console.log(ret.join(',')); // apple, Apple 이 출력됨.
+        var ret2 = getWordsBeginWith(test,begin_char);
+        console.log(ret2.join(',')); // banana, Blueberry 가 출력되어야 함.
+
+    </script>
+</head>
+</html>
