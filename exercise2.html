@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Exercise 2</title>
+
     <script>
         var obj_list = [
             {firstName: '스티브', lastName: '잡스'},
@@ -11,22 +13,20 @@
             {firstName: '앨런', lastName: '머스크'}
         ];
 
-        var html = "<ul>";
-
+        var html ="<table border = '1'>";
+        html += "<tr>" + "<th>" + "firstName" + "</th>" + "<th>" + "lastName" + "</th>" + "</tr>";
         for (var i = 0; i < obj_list.length; i++) {
-            html += "<li>" + obj_list[i].firstName + ' ' + obj_list[i].lastName + "</li>";
+          html += "<tr>"+ "<td>" +obj_list[i].firstName + "</td>" + ' ' + "<td>" + obj_list[i].lastName + "</td>" + "</tr>" ;
         }
 
-        html += "</ul>";
+        html += "</table>";
     </script>
 </head>
 <body>
-<h1>유명한 CEO</h1>
-<div id="ceo_list"></div>
-
-<script>
-    document.getElementById("ceo_list").innerHTML = html;
-</script>
-
+    <h1>유명한 CEO</h1>
+    <div id="ceo_list"></div>
+    <script>
+        document.getElementById("ceo_list").innerHTML = html;
+    </script>
 </body>
 </html>
