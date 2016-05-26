@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="description" content="Font Awesome, the iconic font and CSS framework">
+    <meta name="author" content="Dave Gandy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title> Rannnnn </title>
+    <link rel="stylesheet" href="indexhi.css"/>
+    <style>
+        .floating-box{
+            display: inline-block;
+            width: 400px;
+            margin: 10px;
+            border: 3px powderblue;
+            float: left; }
+        h2{border-radius: 10px 10px 10px 10px; text-align: center}
+        #스크롤{height: 200px; overflow-y: scroll;}
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Ran</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">intro</a></li>
+            <li><a href="#ME">ME - RANNNN </a></li>
+            <li><a href="#Like"> Like </a></li>
+            <li><a href="#Active"> Active </a></li>
+            <li><a href="#Friend"> Friend </a></li>
+            <li><a href="#Vis"> Visitor</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>김경란</h1>
+        <p>한성대학교 정보시스템공학과 3학년</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="스크롤" class="floating-box">
+            <h2 id="ME"> KYEONGRAN : <span class="glyphicon glyphicon-user"></span></h2>
+            <p> 김경란 / 金京卵 / KIMKYEONGRAN </p>
+            <p> 편입생 / 3학년 / 혈액형 B </p>
+            <p> 1995년 9월 4일 :: <a href="https://search.naver.com/search.naver?where=nexearch&ie=utf8&query=9%EC%9B%944%EC%9D%BC%EC%83%9D%EC%9D%BC%EC%97%B0%EC%98%88%EC%9D%B8&sm=tab_stc"> 같은 생일 유명인</a></p>
+            <p> 한성대학교 정보시스템공학과 14학번 </p>
+            <p> 한라대학교 메카트로닉스공학과 출신 </p>
+            </div>
+            <div class="floating-box">
+            <h2 id="Like"> Like : <span class="glyphicon glyphicon-plus-sign"></span></span> </h2>
+            <p> 노는거, 수다떠는거, 기획하는거, 명상하는거 </p>
+            <p> 강아지 :: 웰시코기, 골든리트리버 </p>
+            <image src="kogi.jpg" width="300" height="250"/>
+            <p> 가수 :: 윤딴딴 , 소심한 오빠들 </p>
+            <p> 음식 :: 회 , 파스타 , 떡볶이 </p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="floating-box">
+            <h2 id="Active"> Active : <span class="glyphicon glyphicon-play"></span></span><span class="glyphicon glyphicon-person-running"></span></h2>
+            <p> 대외 : 봉사(교육봉사, 행사안내) , 축제기획 </p>
+            <p> 문화 : 영화(멜로, 스릴러, 액션) , 음악(주로 발라드) , 걷기(상점 구경, 길거리 구경) </p>
+            <p> 여행 : 해외(일본, 베트남, 대만) , 국내(여수박람회, 전주 등)</p>
+            <p> 운동 : 축구, 농구, 배구, 발야구, 피구, 소프트볼, 짐볼 (초,중,고)</p>
+        </div>
+
+            <div class="floating-box">
+                <h2 id="Friend"> Friend : <span class="glyphicon glyphicon-heart"></span></span></h2>
+                <p> 엔조이팸/ 지선 윤정 윤선 다솔 경운</p>
+                <p> 성신의 딸/ 지민 민주 정인 다나 은정 은비 은영 </p>
+                <p> 사대애정촌/ 가영 경희 가현 아라 가희 보민 예진 예린 민선 슬기 은빈 지우 혜연 혜미 </p>
+                <p> 메카쨩☆/ 다솔 진선 예지 은희 윤희 지영 서연 주은</p>
+                <p> 라대/ 진태 안뱅 복 직 원통 재렉 개이득 경제 교지니 함죠 빡통 혀누 서연더쿠</p>
+            </div>
+            <div class="floating-box">
+                <h2 id="Vis"> visitor </h2>
+                <form>
+                    <fieldset>
+                        <legend> visitor </legend>
+                        <table>
+                            <tr>
+                                <td><lable for="nickname">닉네임&nbsp;&nbsp;<input type="text" name="text" value="닉네임을 입력하세요."/></lable></td>
+                            </tr>
+                            <tr>
+                                <td><lable for="password">비밀번호&nbsp;&nbsp;<input type="password" name="password" value=""/></td>
+                            </tr>
+                            <tr>
+                                <td>성별
+                                    <input id="man" type="radio" name="gender" value="m"/>
+                                    <label for="man"> 남자 </label>
+                                    <input id="waman" type="radio" name="gender" value="w"/>
+                                    <label for="waman"> 여자 </label>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <legend> comment </legend>
+                                <textarea cols="30" rows="5"></textarea>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="submit" value="write"/>
+                                    <input type="reset"  value="reset"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+<a href="#intro"> intro </a>
+</body>
+</html>
