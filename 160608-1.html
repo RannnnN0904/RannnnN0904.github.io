@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Basic</title>
+    <style>
+        @media (max-width: 499px) {
+            body { background: red; }
+        }
+
+        @media  (min-width: 500px) and (max-width: 799px) {
+            body { background: green; }
+        }
+
+        @media (min-width: 800px) {
+            body { background: blue; }
+        }
+
+        @media {
+            #watermark {
+                display: none;
+                color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 300px;
+                margin-left: -150px;
+                border: 2px red solid;
+                text-align: center;
+                -ms-transform: rotate(-20deg); /* IE 9 */
+                -webkit-transform: rotate(-20deg); /* Safari */
+                transform: rotate(-20deg);
+            }}
+
+        @media print {
+            #watermark {
+                display: block;
+                color: red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 300px;
+                margin-left: -150px;
+                border: 2px red solid;
+                text-align: center;
+                -ms-transform: rotate(-20deg); /* IE 9 */
+                -webkit-transform: rotate(-20deg); /* Safari */
+                transform: rotate(-20deg);
+            }}
+    </style>
+
+    <div id="watermark">
+        <h1>Confidential</h1>
+    </div>
+
+</head>
+<body>
+</body>
+</html>
